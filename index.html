@@ -3,93 +3,352 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Landing Page</title>
-
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="StartupBoost - Startup consulting and growth advisory. Business strategy, fundraising, product-market fit.">
+    <meta name="keywords"
+        content="startup consulting, fundraising advice, business strategy, growth advisory, startup mentor">
+    <title>StartupBoost - Startup Consulting & Growth</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700&family=Lora:wght@400;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+   <link rel="stylesheet" href="style.css">
 </head>
 
-<body>
+<body class="bg-white">
+    <header class="fixed top-0 w-full bg-white z-50 border-b border-gray-200 shadow-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center">
+            <div class="flex items-center gap-3">
+                <div class="w-10 h-10 gradient-startup rounded-lg flex items-center justify-center">
+                    <i class="fas fa-rocket text-white font-bold"></i>
+                </div>
+                <span class="text-xl font-bold text-gray-900">StartupBoost</span>
+            </div>
+            <nav class="hidden lg:flex gap-10 items-center">
+                <a href="#services" class="text-gray-700 hover:text-cyan-600 transition font-medium">Services</a>
+                <a href="#focus-areas" class="text-gray-700 hover:text-cyan-600 transition font-medium">Focus Areas</a>
+                <a href="#success-stories" class="text-gray-700 hover:text-cyan-600 transition font-medium">Success
+                    Stories</a>
+                <a href="#team" class="text-gray-700 hover:text-cyan-600 transition font-medium">Team</a>
+                <button
+                    class="gradient-startup text-white px-6 py-2 rounded-lg font-bold hover:shadow-lg transition"><a href="contact.html">Contact</a>
+                    </button>
+            </nav>
+            
+        </div>
+        
+        </div>
+    </header>
 
-    <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
-        <div class="container">
-            <a class="navbar-brand d-flex align-items-center" href="#">
-                <img src="https://img.freepik.com/premium-vector/creative-elegant-abstract-minimalistic-logo-design-vector-any-brand-company_1253202-137644.jpg?semt=ais_hybrid&w=740&q=80"
-                    alt="Company Logo" width="40" height="40" class="me-2 rounded">
-            </a>
+    <section class="pt-32 pb-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-cyan-50 to-blue-50">
+        <div class="max-w-7xl mx-auto">
+            <div class="grid lg:grid-cols-2 gap-12 items-center">
+                <div>
+                    <span
+                        class="inline-block px-4 py-2 bg-cyan-100 text-cyan-700 rounded-full text-sm font-bold mb-6">Startup
+                        Mentorship</span>
+                    <h1 class="text-6xl lg:text-7xl font-bold text-gray-900 mb-6 leading-tight">
+                        Build &
+                        <span class="gradient-startup bg-clip-text text-transparent"> Scale</span>
+                        Your Startup
+                    </h1>
+                    <p class="text-xl text-gray-600 mb-10 leading-relaxed">
+                        Expert startup consulting. Business strategy, fundraising, product-market fit, growth scaling,
+                        and startup mentorship.
+                    </p>
+                    <div class="flex flex-col sm:flex-row gap-4">
+                        <button
+                            class="gradient-startup text-white px-8 py-4 rounded-lg font-bold hover:shadow-xl transition text-lg"><a href="about.html">
+                            About</a>
+                        </button>
+                        <button
+                            class="border-2 border-cyan-600 text-cyan-600 px-8 py-4 rounded-lg font-bold hover:bg-cyan-50 transition text-lg"><a href="contact.html">
+                            Contact us </a>
+                        </button>
+                    </div>
+                    <div class="mt-12 space-y-4">
+                        <div class="flex gap-3">
+                            <i class="fas fa-check text-cyan-600 text-2xl"></i>
+                            <div>
+                                <p class="font-bold text-gray-900">$2.5B+ Funded</p>
+                                <p class="text-sm text-gray-600">Startups we've advised</p>
+                            </div>
+                        </div>
+                        <div class="flex gap-3">
+                            <i class="fas fa-check text-cyan-600 text-2xl"></i>
+                            <div>
+                                <p class="font-bold text-gray-900">150+ Exits</p>
+                                <p class="text-sm text-gray-600">Successful acquisitions & IPOs</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="hidden lg:block relative">
+                    <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?w=500&h=400&fit=crop"
+                        alt="Startup" class="rounded-xl shadow-2xl">
+                </div>
+            </div>
+        </div>
+    </section>
 
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav">
-                <span class="navbar-toggler-icon"></span>
+    <section id="services" class="py-20 px-4 sm:px-6 lg:px-8 bg-white">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-4xl lg:text-5xl font-bold text-gray-900 mb-16 text-center">Consulting Services</h2>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-white p-8 rounded-xl shadow-md border border-gray-200 hover:border-cyan-500 transition">
+                    <div class="w-12 h-12 gradient-startup rounded-lg flex items-center justify-center mb-6">
+                        <i class="fas fa-lightbulb text-white text-xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-900 mb-3">Ideation & Validation</h3>
+                    <p class="text-gray-600 mb-6">Validate your startup idea. Market research, product-market fit
+                        analysis, competitive landscape.</p>
+                    <button onclick="openModal()" class="text-cyan-600 font-bold hover:text-cyan-700 transition">Learn
+                        More →</button>
+                </div>
+
+                <div class="bg-white p-8 rounded-xl shadow-md border border-gray-200 hover:border-cyan-500 transition">
+                    <div class="w-12 h-12 gradient-startup rounded-lg flex items-center justify-center mb-6">
+                        <i class="fas fa-chart-pie text-white text-xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-900 mb-3">Business Planning</h3>
+                    <p class="text-gray-600 mb-6">Create your business plan. Financial modeling, go-to-market strategy,
+                        unit economics.</p>
+                    <button onclick="openModal()" class="text-cyan-600 font-bold hover:text-cyan-700 transition">Learn
+                        More →</button>
+                </div>
+
+                <div class="bg-white p-8 rounded-xl shadow-md border border-gray-200 hover:border-cyan-500 transition">
+                    <div class="w-12 h-12 gradient-startup rounded-lg flex items-center justify-center mb-6">
+                        <i class="fas fa-money-bill-wave text-white text-xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-900 mb-3">Fundraising Prep</h3>
+                    <p class="text-gray-600 mb-6">Prepare for fundraising. Pitch deck, deck review, investor relations
+                        strategy.</p>
+                    <button onclick="openModal()" class="text-cyan-600 font-bold hover:text-cyan-700 transition">Learn
+                        More →</button>
+                </div>
+
+                <div class="bg-white p-8 rounded-xl shadow-md border border-gray-200 hover:border-cyan-500 transition">
+                    <div class="w-12 h-12 gradient-startup rounded-lg flex items-center justify-center mb-6">
+                        <i class="fas fa-users-cog text-white text-xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-900 mb-3">Team Building</h3>
+                    <p class="text-gray-600 mb-6">Build the right team. Hiring strategy, company culture, organizational
+                        structure.</p>
+                    <button onclick="openModal()" class="text-cyan-600 font-bold hover:text-cyan-700 transition">Learn
+                        More →</button>
+                </div>
+
+                <div class="bg-white p-8 rounded-xl shadow-md border border-gray-200 hover:border-cyan-500 transition">
+                    <div class="w-12 h-12 gradient-startup rounded-lg flex items-center justify-center mb-6">
+                        <i class="fas fa-rocket text-white text-xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-900 mb-3">Growth Scaling</h3>
+                    <p class="text-gray-600 mb-6">Scale your startup. Growth hacking, acquisition strategies, retention
+                        optimization.</p>
+                    <button onclick="openModal()" class="text-cyan-600 font-bold hover:text-cyan-700 transition">Learn
+                        More →</button>
+                </div>
+
+                <div class="bg-white p-8 rounded-xl shadow-md border border-gray-200 hover:border-cyan-500 transition">
+                    <div class="w-12 h-12 gradient-startup rounded-lg flex items-center justify-center mb-6">
+                        <i class="fas fa-gavel text-white text-xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-900 mb-3">Legal & Compliance</h3>
+                    <p class="text-gray-600 mb-6">Navigate legalities. Equity, compliance, corporate structure, investor
+                        agreements.</p>
+                    <button onclick="openModal()" class="text-cyan-600 font-bold hover:text-cyan-700 transition">Learn
+                        More →</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="focus-areas" class="py-20 px-4 sm:px-6 lg:px-8 bg-gray-50">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-4xl lg:text-5xl font-bold text-gray-900 mb-16 text-center">Industries We Focus On</h2>
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <div class="bg-white p-6 rounded-xl shadow-md text-center">
+                    <i class="fas fa-mobile-alt text-cyan-600 text-4xl mb-4"></i>
+                    <h4 class="text-lg font-bold text-gray-900">SaaS & Apps</h4>
+                </div>
+                <div class="bg-white p-6 rounded-xl shadow-md text-center">
+                    <i class="fas fa-shopping-cart text-cyan-600 text-4xl mb-4"></i>
+                    <h4 class="text-lg font-bold text-gray-900">E-Commerce</h4>
+                </div>
+                <div class="bg-white p-6 rounded-xl shadow-md text-center">
+                    <i class="fas fa-coins text-cyan-600 text-4xl mb-4"></i>
+                    <h4 class="text-lg font-bold text-gray-900">FinTech</h4>
+                </div>
+                <div class="bg-white p-6 rounded-xl shadow-md text-center">
+                    <i class="fas fa-hospital text-cyan-600 text-4xl mb-4"></i>
+                    <h4 class="text-lg font-bold text-gray-900">HealthTech</h4>
+                </div>
+                <div class="bg-white p-6 rounded-xl shadow-md text-center">
+                    <i class="fas fa-robot text-cyan-600 text-4xl mb-4"></i>
+                    <h4 class="text-lg font-bold text-gray-900">AI/ML</h4>
+                </div>
+                <div class="bg-white p-6 rounded-xl shadow-md text-center">
+                    <i class="fas fa-globe text-cyan-600 text-4xl mb-4"></i>
+                    <h4 class="text-lg font-bold text-gray-900">MarketPlace</h4>
+                </div>
+                <div class="bg-white p-6 rounded-xl shadow-md text-center">
+                    <i class="fas fa-dumbbell text-cyan-600 text-4xl mb-4"></i>
+                    <h4 class="text-lg font-bold text-gray-900">Wellness</h4>
+                </div>
+                <div class="bg-white p-6 rounded-xl shadow-md text-center">
+                    <i class="fas fa-graduation-cap text-cyan-600 text-4xl mb-4"></i>
+                    <h4 class="text-lg font-bold text-gray-900">EdTech</h4>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="success-stories" class="py-20 px-4 sm:px-6 lg:px-8 bg-white">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-4xl lg:text-5xl font-bold text-gray-900 mb-16 text-center">Success Stories</h2>
+            <div class="grid md:grid-cols-2 gap-8">
+                <div class="bg-white p-8 rounded-xl shadow-md border border-gray-200">
+                    <h3 class="text-2xl font-bold text-gray-900 mb-2">CloudApp Inc.</h3>
+                    <p class="text-cyan-600 font-semibold mb-4">Series A → Unicorn (2 years)</p>
+                    <p class="text-gray-600 mb-4">From pre-seed to $1B valuation through strategic scaling and
+                        fundraising guidance.</p>
+                    <button onclick="openModal()" class="text-cyan-600 font-bold hover:text-cyan-700 transition">Read
+                        Case Study →</button>
+                </div>
+
+                <div class="bg-white p-8 rounded-xl shadow-md border border-gray-200">
+                    <h3 class="text-2xl font-bold text-gray-900 mb-2">DataFlow Systems</h3>
+                    <p class="text-cyan-600 font-semibold mb-4">Acquired by Google → $450M</p>
+                    <p class="text-gray-600 mb-4">Consulted on product-market fit, scaling strategy, and successful
+                        acquisition negotiations.</p>
+                    <button onclick="openModal()" class="text-cyan-600 font-bold hover:text-cyan-700 transition">Read
+                        Case Study →</button>
+                </div>
+
+                <div class="bg-white p-8 rounded-xl shadow-md border border-gray-200">
+                    <h3 class="text-2xl font-bold text-gray-900 mb-2">MediCare AI</h3>
+                    <p class="text-cyan-600 font-semibold mb-4">$50M Series C Funding</p>
+                    <p class="text-gray-600 mb-4">Strategic guidance on go-to-market, healthcare compliance, and
+                        investor relations.</p>
+                    <button onclick="openModal()" class="text-cyan-600 font-bold hover:text-cyan-700 transition">Read
+                        Case Study →</button>
+                </div>
+
+                <div class="bg-white p-8 rounded-xl shadow-md border border-gray-200">
+                    <h3 class="text-2xl font-bold text-gray-900 mb-2">PayFlow Fintech</h3>
+                    <p class="text-cyan-600 font-semibold mb-4">IPO Listed → NASDAQ</p>
+                    <p class="text-gray-600 mb-4">Guided company from Series A through IPO preparation and market
+                        listing.</p>
+                    <button onclick="openModal()" class="text-cyan-600 font-bold hover:text-cyan-700 transition">Read
+                        Case Study →</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="team" class="py-20 px-4 sm:px-6 lg:px-8 bg-gray-50">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-4xl lg:text-5xl font-bold text-gray-900 mb-16 text-center">Meet Our Advisors</h2>
+            <div class="grid md:grid-cols-4 gap-8">
+                <div class="text-center">
+                    <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=200&h=200&fit=crop"
+                        alt="Advisor" class="w-32 h-32 rounded-full mx-auto mb-4 object-cover">
+                    <h4 class="text-xl font-bold text-gray-900">Robert Chen</h4>
+                    <p class="text-cyan-600 font-semibold mb-2">Co-Founder</p>
+                    <p class="text-sm text-gray-600">Founded 3 startups, 2 exits</p>
+                </div>
+                <div class="text-center">
+                    <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=200&h=200&fit=crop"
+                        alt="Advisor" class="w-32 h-32 rounded-full mx-auto mb-4 object-cover">
+                    <h4 class="text-xl font-bold text-gray-900">Sarah Williams</h4>
+                    <p class="text-cyan-600 font-semibold mb-2">Venture Capital</p>
+                    <p class="text-sm text-gray-600">Ex-Sequoia Capital partner</p>
+                </div>
+                <div class="text-center">
+                    <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=200&h=200&fit=crop"
+                        alt="Advisor" class="w-32 h-32 rounded-full mx-auto mb-4 object-cover">
+                    <h4 class="text-xl font-bold text-gray-900">Michael Park</h4>
+                    <p class="text-cyan-600 font-semibold mb-2">Operations</p>
+                    <p class="text-sm text-gray-600">Scaled 5 companies to $100M+</p>
+                </div>
+                <div class="text-center">
+                    <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=200&h=200&fit=crop"
+                        alt="Advisor" class="w-32 h-32 rounded-full mx-auto mb-4 object-cover">
+                    <h4 class="text-xl font-bold text-gray-900">Emily Rodriguez</h4>
+                    <p class="text-cyan-600 font-semibold mb-2">Product Strategy</p>
+                    <p class="text-sm text-gray-600">Built products at Uber & Airbnb</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-20 px-4 sm:px-6 lg:px-8 gradient-startup text-white">
+        <div class="max-w-4xl mx-auto text-center">
+            <h2 class="text-4xl lg:text-5xl font-bold mb-6">Ready to Build Your Startup?</h2>
+            <p class="text-xl mb-10 opacity-90">Book a consultation with one of our experienced startup advisors.</p>
+            <button 
+                class="bg-white text-cyan-600 px-10 py-4 rounded-lg font-bold hover:shadow-2xl transition text-lg hover:bg-gray-100"><a href="contact.html">
+                Contact us</a>
             </button>
-
-            <div class="collapse navbar-collapse" id="nav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
-                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-
-    <!-- Hero Section -->
-    <section class="py-5 text-center bg-light">
-        <div class="container py-5">
-            <h1 class="display-4 fw-bold">Welcome to Our Landing Page</h1>
-            <p class="lead text-muted mt-3">
-                Build fast, responsive sites using Bootstrap 5.
-            </p>
-            <div class="mt-4">
-                <a href="contact.html" class="btn btn-primary btn-lg me-2">Get Started</a>
-                <a href="about.html" class="btn btn-outline-secondary btn-lg">Learn More</a>
-            </div>
         </div>
     </section>
 
-    <!-- Features Section -->
-    <section class="py-5">
-        <div class="container">
-            <div class="row text-center g-4">
-                <div class="col-md-4">
-                    <div class="p-4 border rounded h-100">
-                        <h4>Fast</h4>
-                        <p class="text-muted">Optimized for speed and performance.</p>
-                    </div>
+    <footer class="bg-gray-900 text-gray-400 py-12 px-4 sm:px-6 lg:px-8">
+        <div class="max-w-6xl mx-auto">
+            <div class="grid md:grid-cols-4 gap-8 mb-8">
+                <div>
+                    <h4 class="text-white font-bold mb-4">StartupBoost</h4>
+                    <p class="text-sm">Build and scale your startup with expert advisors.</p>
                 </div>
-                <div class="col-md-4">
-                    <div class="p-4 border rounded h-100">
-                        <h4>Responsive</h4>
-                        <p class="text-muted">Looks great on all devices.</p>
-                    </div>
+                <div>
+                    <h4 class="text-white font-bold mb-4">Services</h4>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="#" class="hover:text-white transition">Consulting</a></li>
+                        <li><a href="#" class="hover:text-white transition">Mentorship</a></li>
+                        <li><a href="#" class="hover:text-white transition">Fundraising</a></li>
+                    </ul>
                 </div>
-                <div class="col-md-4">
-                    <div class="p-4 border rounded h-100">
-                        <h4>Easy</h4>
-                        <p class="text-muted">Simple and clean design.</p>
+                <div>
+                    <h4 class="text-white font-bold mb-4">Company</h4>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="#" class="hover:text-white transition">About</a></li>
+                        <li><a href="#" class="hover:text-white transition">Blog</a></li>
+                        <li><a href="#" class="hover:text-white transition">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-white font-bold mb-4">Resources</h4>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="#" class="hover:text-white transition">Guides</a></li>
+                        <li><a href="#" class="hover:text-white transition">Case Studies</a></li>
+                        <li><a href="#" class="hover:text-white transition">Tools</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-white font-bold mb-4">Follow</h4>
+                    <div class="flex gap-3">
+                        <a href="#" class="hover:text-cyan-400 transition"><i
+                                class="fab fa-linkedin text-white"></i></a>
+                        <a href="#" class="hover:text-cyan-400 transition"><i class="fab fa-twitter text-white"></i></a>
+                        <a href="#" class="hover:text-cyan-400 transition"><i
+                                class="fab fa-facebook text-white"></i></a>
                     </div>
                 </div>
             </div>
+            <div class="border-t border-gray-700 pt-8 text-center text-sm">
+                <p class="text-center text-gray-400 text-sm">Created by <a href="https://faizyab-hussain.vercel.app/"
+                        class="text-gray-300 hover:text-white transition">Syed Faizyab Hussain</a></p>
+                <p>&copy; 2026 StartupBoost. All rights reserved.</p>
+            </div>
         </div>
-    </section>
-
-    <!-- Call to Action -->
-    <section class="py-5 bg-dark text-white text-center">
-        <div class="container">
-            <h2 class="fw-bold">Ready to start?</h2>
-            <p class="mt-2">Create your website today with Bootstrap.</p>
-            <a href="contact.html" class="btn btn-light btn-lg mt-3">Join Now</a>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="py-3 bg-light text-center">
-        <p class="mb-0 text-muted">&copy; 2026 Company. All rights reserved.</p>
     </footer>
 
-    <!-- Bootstrap JS -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+
+
 </body>
 
 </html>
